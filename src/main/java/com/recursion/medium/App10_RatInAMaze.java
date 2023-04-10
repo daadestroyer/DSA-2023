@@ -6,7 +6,7 @@ package com.recursion.medium;
 // [0,0,0,0]
 // [0,1,0,0]
 // [0,0,1,0]
-public class App10_BlockedMaze {
+public class App10_RatInAMaze {
 
 
     static void blockedMaze(int[][] maze, int row, int col, String ans, boolean[][] visted) {

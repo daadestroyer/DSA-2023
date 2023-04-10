@@ -9,7 +9,9 @@ import java.util.List;
 public class App1_permutationOfArray {
     static void approach1(int[] arr, List<List<Integer>> ans, List<Integer> ds, boolean[] flag) {
         if (ds.size() == arr.length) {
-            ans.add(new ArrayList<>(ds));
+            if (isValid(ds, ans)) {
+                ans.add(new ArrayList<>(ds));
+            }
             return;
         }
         for (int i = 0; i < arr.length; i++) {
@@ -21,6 +23,16 @@ public class App1_permutationOfArray {
                 ds.remove(ds.size() - 1);
             }
         }
+    }
+
+    static boolean isValid(List<Integer> ds, List<List<Integer>> res) {
+        for (List<Integer> r : res) {
+
+            if (r.equals(ds)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     static void approach2(int index, int[] arr, List<List<Integer>> ans) {
@@ -46,12 +58,16 @@ public class App1_permutationOfArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int[] arr = {1, 1, 2};
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> ds = new ArrayList<>();
         boolean[] flag = new boolean[arr.length];
-        // approach1(arr, ans, ds, flag);
-        approach2(0, arr, ans);
+        approach1(arr, ans, ds, flag);
+        // approach2(0, arr, ans);
         System.out.println(ans);
+
+
+
+
     }
 }
