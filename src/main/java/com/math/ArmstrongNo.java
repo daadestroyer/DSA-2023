@@ -2,12 +2,14 @@ package com.math;
 
 public class ArmstrongNo {
     static boolean armStrong(int num) {
-        // get the last num
+
         int originalNo = num;
         int temp = num;
         int sum = 0;
         int count = 0;
 
+
+        // getting count of digits
         while (temp != 0) {
             temp = temp / 10;
             count++;

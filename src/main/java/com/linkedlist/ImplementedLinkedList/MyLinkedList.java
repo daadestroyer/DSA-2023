@@ -139,5 +139,6 @@ public class MyLinkedList {
         l1.addLast(20);
         l1.addFirst(0);
         l1.display();
+
     }
 }
