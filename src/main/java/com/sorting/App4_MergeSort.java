@@ -34,7 +34,7 @@ public class App4_MergeSort {
     }
 
     static int[] divideArray(int[] arr, int lo, int hi) {
-        if (lo == hi) {
+        if (lo >= hi) {
             int[] bc = new int[1];
             bc[0] = arr[lo];
             return bc;

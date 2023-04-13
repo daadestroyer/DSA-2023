@@ -10,6 +10,72 @@ class LinkedListImplementation {
     private Node head;
     private Node tail;
 
+    public boolean detectLoopInLinkedList(Node head) {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Node findMiddleOfLinkedList(Node head) {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
+    public Node reverse(Node ptr) {
+        Node prev = null;
+        Node curr = null;
+
+        while (curr != null) {
+            curr = ptr.next;
+            ptr.next = prev;
+            prev = ptr;
+            ptr = curr;
+        }
+        return prev;
+    }
+
+    public boolean isPallindrome(Node head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
+
+        Node slow = head;
+        Node fast = head;
+
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        slow.next = reverse(slow.next);
+
+        slow = slow.next;
+        Node dummyNode = head;
+
+        while (slow != null) {
+            if (dummyNode.data != slow.data) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void display() {
         if (this.size == 0) {
             System.out.println("no data found");

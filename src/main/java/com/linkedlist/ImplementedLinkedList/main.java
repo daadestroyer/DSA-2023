@@ -24,5 +24,7 @@ public class main {
         System.out.println(digit);
         Collections.sort(digit);
         System.out.println(digit);
+
+
     }
 }
