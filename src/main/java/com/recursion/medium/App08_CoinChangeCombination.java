@@ -1,5 +1,7 @@
 package com.recursion.medium;
 
+import java.util.ArrayList;
+
 public class App08_CoinChangeCombination {
     static void coinChangeCombination(int[] coins, int total, String ans, int lastIdx) {
         if (total == 0) {
@@ -13,6 +15,8 @@ public class App08_CoinChangeCombination {
     }
 
     public static void main(String[] args) {
-        coinChangeCombination(new int[]{2, 3, 5, 6}, 10, "", 0);
+
+        coinChangeCombination(new int[]{10,1,2,7,6,1,5}, 8, "", 0);
+
     }
 }

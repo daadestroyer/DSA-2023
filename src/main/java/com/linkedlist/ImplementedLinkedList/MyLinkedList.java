@@ -1,5 +1,8 @@
 package com.linkedlist.ImplementedLinkedList;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
 class LinkedListImplementation {
     private class Node {
         int data;
@@ -200,11 +203,34 @@ class LinkedListImplementation {
 
 public class MyLinkedList {
     public static void main(String[] args) {
-        LinkedListImplementation l1 = new LinkedListImplementation();
-        l1.addFirst(10);
-        l1.addLast(20);
-        l1.addFirst(0);
-        l1.display();
+//        LinkedListImplementation l1 = new LinkedListImplementation();
+//        l1.addFirst(10);
+//        l1.addLast(20);
+//        l1.addFirst(0);
+//        l1.display();
+        List<Integer> odd = new ArrayList<>();
+        odd.add(1);
+        odd.add(2);
+        odd.add(3);
+        odd.add(4);
+
+        //System.out.println(odd);
+        odd.remove(0);
+        //System.out.println(odd);
+        //odd.remove(0);
+//        Set<Integer> st = new HashSet<>();
+//
+//        st.add(10);
+//        Iterator str = st.iterator();
+//        while(str.hasNext()){
+//            int a = (int)str.next();
+//        }
+
+        //   System.out.println(77270+70485+145725+70465+70465+74190+72000+72000+110000+75000+75000+75000+20000+20000+14190);
+
+
+        System.out.println(0%2);
+
 
     }
 }

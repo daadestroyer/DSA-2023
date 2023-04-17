@@ -25,7 +25,7 @@ public class App2_permurationOfString {
     }
 
     public static void main(String[] args) {
-        String str = "abc";
+        String str = "aba";
         List<String> res = findPerm(str);
         System.out.println(res);
     }

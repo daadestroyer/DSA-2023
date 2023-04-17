@@ -23,7 +23,7 @@ public class App3_getAllSubSeqOfString {
     }
 
     public static void main(String[] args) {
-        String str = "abc";
+        String str = "aba";
         List<String> res = getSubSeq(str);
         System.out.println(res);
     }

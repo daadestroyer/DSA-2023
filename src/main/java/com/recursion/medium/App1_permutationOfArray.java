@@ -58,7 +58,7 @@ public class App1_permutationOfArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 1, 2};
+        int[] arr = {1, 2, 2};
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> ds = new ArrayList<>();
         boolean[] flag = new boolean[arr.length];

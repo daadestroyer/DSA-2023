@@ -14,6 +14,6 @@ public class App07_CoinChangePermutation {
     }
 
     public static void main(String[] args) {
-        coinChangePerm(new int[]{2, 3, 5, 6}, 10, "");
+        coinChangePerm(new int[]{10,1,2,7,6,1,5}, 8, "");
     }
 }
