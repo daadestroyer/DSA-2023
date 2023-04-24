@@ -1,11 +1,18 @@
-package com.array.medium;
+package com.recursion.medium;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class App13_GenerateSubArray {
+public class App14_GenerateSubArray {
+    static int sum = 0;
+
     static void generateSubArray(int[] arr, int left, int right, List<List<Integer>> res) {
-        if (left == arr.length) return;
+        if (left == arr.length) {
+            for (List<Integer> sres : res) {
+                sum += sres.stream().min((i1, i2) -> i1.compareTo(i2)).get();
+            }
+            return;
+        }
 
         if (right == arr.length) {
             generateSubArray(arr, left + 1, left + 1, res);
@@ -16,24 +23,20 @@ public class App13_GenerateSubArray {
             }
             curr.add(arr[right]);
             res.add(curr);
+
             generateSubArray(arr, left, right + 1, res);
 
         }
     }
 
-    public static void main(String[] args) {
+    public int sumSubarrayMins(int[] arr) {
         List<List<Integer>> res = new ArrayList<>();
-        generateSubArray(new int[]{3, 1, 2, 4}, 0, 0, res);
+        generateSubArray(arr, 0, 0, res);
+        return sum;
+    }
 
-        System.out.println(res);
-//        int sum = 0;
-//        for (List<Integer> sres : res) {
-//            sum += sres.stream().min((i1, i2) -> i1.compareTo(i2)).get();
-//        }
-//        // 3 31 321 3214
-//        // 1 12 124
-//        // 2 24
-//        // 4
-//        System.out.println(sum);
+    public static void main(String[] args) {
+        int ans = new App14_GenerateSubArray().sumSubarrayMins(new int[]{11, 81, 94, 43, 3});
+        System.out.println(ans);
     }
 }
