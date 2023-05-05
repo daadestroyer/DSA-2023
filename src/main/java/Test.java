@@ -1,3 +1,5 @@
+import com.sun.source.tree.Tree;
+
 import java.util.*;
 
 public class Test {
@@ -19,11 +21,16 @@ public class Test {
         return fres;
     }
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(2);
-        arr.add(3);
-        ArrayList<Integer> arrayList = subsetSums(arr);
-        System.out.println(arrayList);
+//        ArrayList<Integer> arr = new ArrayList<>();
+//        arr.add(2);
+//        arr.add(3);
+//        ArrayList<Integer> arrayList = subsetSums(arr);
+//        System.out.println(arrayList);
+
+
+
+
+
 
     }
 }
