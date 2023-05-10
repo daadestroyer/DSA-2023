@@ -1,4 +1,4 @@
-package com.twopointer;
+package com.slidingwindow_twopointer;
 
 import java.util.*;
 
