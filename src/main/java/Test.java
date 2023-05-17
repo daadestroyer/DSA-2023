@@ -27,8 +27,17 @@ public class Test {
 //        ArrayList<Integer> arrayList = subsetSums(arr);
 //        System.out.println(arrayList);
 
+        int  no = 1234;
+        int temp = 0;
 
-
+        while(no != 0){
+            int rem = no % 10;
+            temp = temp * 10 + rem;
+            no = no / 10;
+        }
+        System.out.println(temp);
+        int lastD = 1234/10;
+        System.out.println(lastD);
 
 
 
