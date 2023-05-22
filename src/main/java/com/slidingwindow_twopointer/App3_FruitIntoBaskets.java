@@ -5,18 +5,24 @@ import java.util.Map;
 
 public class App3_FruitIntoBaskets {
     public static void main(String[] args) {
-        int N = 3;
-        // int[] fruits = {2, 1, 2};
-        int[] fruits = {0, 1, 2, 2, 2, 2 };
-        int pickedFruits=0;
-        Map<Integer,Integer> hm = new HashMap<>();
-        for(int i : fruits){
-            hm.put(i,hm.getOrDefault(i,0)+1);
-            pickedFruits++;
-        }
+//        int[] fruits = {0, 1, 2, 2};
+        int[] fruits = {1, 2, 1};
+        Map<Integer, Integer> hm = new HashMap<>();
 
-        System.out.println(hm);
-        System.out.println(hm.size());
-        System.out.println(pickedFruits);
+        int left = 0, right = 0;
+
+        int res = 0;
+
+        while (right < fruits.length) {
+            hm.put(fruits[right], hm.getOrDefault(fruits[right], 0) + 1);
+            while (hm.size() > 2) {
+                hm.remove(fruits[left]);
+                left++;
+            }
+            res = Math.max(res, right - left + 1);
+            right++;
+        }
+        System.out.println(res);
+
     }
 }
