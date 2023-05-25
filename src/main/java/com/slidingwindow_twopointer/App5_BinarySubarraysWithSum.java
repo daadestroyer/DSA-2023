@@ -32,7 +32,7 @@ public class App5_BinarySubarraysWithSum {
             sum += arr[i];
             count += hm.getOrDefault(sum - goal, 0);
             System.out.println(count);
-            hm.put(sum, hm.getOrDefault(arr[i], 0) + 1);
+            hm.put(sum, hm.getOrDefault(sum, 0) + 1);
         }
         System.out.println(hm);
         return count;
