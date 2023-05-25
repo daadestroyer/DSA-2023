@@ -27,15 +27,11 @@ public class App5_BinarySubarraysWithSum {
         Map<Integer, Integer> hm = new HashMap<>();
         int sum = 0;
         int count = 0;
-
+        hm.put(0,1);
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            if (sum == goal) {
-                count++;
-            }
-            if (hm.containsKey(sum - goal)) {
-                count += hm.get(sum - goal);
-            }
+            count += hm.getOrDefault(sum - goal, 0);
+            System.out.println(count);
             hm.put(sum, hm.getOrDefault(arr[i], 0) + 1);
         }
         System.out.println(hm);
@@ -45,11 +41,11 @@ public class App5_BinarySubarraysWithSum {
     }
 
     public static void main(String[] args) {
-//        int[] arr = {1, 0, 1, 0, 1};
-//        int goal = 2;
+        int[] arr = {1, 0, 1, 0, 1};
+        int goal = 2;
 
-        int[] arr = {0, 0, 0, 0, 0};
-        int goal = 0;
+//        int[] arr = {0, 0, 0, 0, 0};
+//        int goal = 0;
 
 //        int ans = findSum(arr, goal) - findSum(arr, goal - 1);
 //        System.out.println(ans);
