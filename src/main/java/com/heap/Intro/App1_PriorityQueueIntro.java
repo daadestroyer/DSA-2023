@@ -23,12 +23,14 @@ public class App1_PriorityQueueIntro {
 
         // here in priority queue FIFO is not going to be followed doesn't matter in which sequence element
         // get inserted , priority always goes to the small number
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
         // the element which have smaller number will have higher priority
-        pq.add(3); // O(logN)
-        pq.add(4);
+        pq.add(1); // O(logN)
         pq.add(1);
-        pq.add(7);
+        pq.add(1);
+        pq.add(2);
+        pq.add(10);
+        pq.add(9);
 
         while(!pq.isEmpty()){
             System.out.println(pq.peek()); // O(1)
