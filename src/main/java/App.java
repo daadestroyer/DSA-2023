@@ -2,22 +2,35 @@
 import java.util.*;
 
 
-
-
 public class App {
 
     public static void main(String[] args) {
 
-       Set<Integer> set = new HashSet<>();
-       set.add(10);
-       set.add(2);
-       set.add(30);
-       set.add(3);
-       set.add(20);
-       set.add(20);
-       set.add(null);
+        int[] a = {1, 2, 3, 4, 5};
+        int smallest = Integer.MAX_VALUE;
+        int secondsmall = Integer.MAX_VALUE;
 
-        System.out.println(set);
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < smallest) {
+                secondsmall = smallest;
+                smallest = a[i];
+            } else if (a[i] < secondsmall && a[i] > smallest) {
+                secondsmall = a[i];
+            }
+        }
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > largest) {
+                secondLargest = largest;
+                largest = a[i];
+            } else if (a[i] > secondLargest && a[i] < largest) {
+                secondLargest = a[i];
+            }
+        }
+        System.out.println(secondLargest);
+        System.out.println(secondsmall);
 
 
     }

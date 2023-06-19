@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class App9_LongestConsecutiveSequenceInAnArray {
     public static void main(String[] args) {
-        int[] arr = {100, 200, 1, 3, 2, 4};
+        int[] arr = {0,0};
 
         Set<Integer> st = new HashSet<>();
         for (int i : arr) {
@@ -15,7 +15,9 @@ public class App9_LongestConsecutiveSequenceInAnArray {
         int longestSeq = 0;
 
         for (int i : arr) {
+
             if (!st.contains(i - 1)) {
+
                 int startNum = i;
                 int currentSeq = 1;
 
