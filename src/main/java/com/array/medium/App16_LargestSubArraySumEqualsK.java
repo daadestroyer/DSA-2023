@@ -3,7 +3,7 @@ package com.array.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class App16_SubArraySumEqualsK {
+public class App16_LargestSubArraySumEqualsK {
 
     private static int sum(int i, int j, int[] a, int k) {
         int sum = 0;
