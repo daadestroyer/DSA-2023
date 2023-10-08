@@ -2,7 +2,6 @@ package com.heap.programs;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 
@@ -50,6 +49,7 @@ public class App6_FindKClosestElementsUsingPair {
                 pq.poll();
             }
         }
+        System.out.println(pq);
         while (!pq.isEmpty()) {
             al.add(pq.poll());
         }

@@ -3,7 +3,7 @@ package com.stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class App2_SubOfSubArrayMinimum {
+public class App20_SubOfSubArrayMinimum {
     public static void generateSubArray(int[] arr, int left, int right, List<List<Integer>> res) {
 
         if (left == arr.length) {

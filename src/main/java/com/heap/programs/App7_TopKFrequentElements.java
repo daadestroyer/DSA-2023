@@ -17,6 +17,7 @@ public class App7_TopKFrequentElements {
                 pq.poll();
             }
         }
+
         while (!pq.isEmpty()) {
             al.add(pq.poll());
         }
@@ -25,11 +26,11 @@ public class App7_TopKFrequentElements {
     }
 
     public static void main(String[] args) {
-//        int[] nums = {1, 1, 1, 2, 2, 3};
-//        int k = 2;
-
-        int[] nums = {1, 1, 3, 3, 3, 3, 4, 4};
+        int[] nums = {1, 1, 1, 2, 2, 3};
         int k = 2;
+
+//        int[] nums = {1, 1, 3, 3, 3, 3, 4, 4};
+//        int k = 2;
 
 //        int[] nums = {4, 1, -1, 2, -1, 2, 3};
 //        int k = 2;

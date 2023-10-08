@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class App9_FindKthTopMostRepetitiveWordInAString {
+public class App9_FindKTopMostRepetitiveWordInAString {
     public static void main(String[] args) {
         String s = "hi my name is java nigam is i love to java in java because it is very good name";
         int k = 2;
@@ -18,7 +18,7 @@ public class App9_FindKthTopMostRepetitiveWordInAString {
         for(Map.Entry<String,Integer> entry : hm.entrySet()){
             pq.add(entry.getKey());
         }
-
+        System.out.println(pq);
         while(k-->0){
             System.out.println(pq.poll());
         }

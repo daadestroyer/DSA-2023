@@ -1,9 +1,8 @@
 package com.stack;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class App5_CelebrityProblem {
+public class App50_CelebrityProblem {
 
     static int findCelebrity(int[][] arr){
         Stack<Integer> st = new Stack<>();

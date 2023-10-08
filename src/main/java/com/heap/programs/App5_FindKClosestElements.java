@@ -23,10 +23,11 @@ public class App5_FindKClosestElements {
 
         for (int i : arr) {
             pq.add(i);
-
+            System.out.println(pq);
             if (pq.size() > k)
                 pq.remove();
         }
+        System.out.println(pq);
         while (!pq.isEmpty()) {
             list.add(pq.poll());
         }
@@ -44,8 +45,8 @@ public class App5_FindKClosestElements {
 //        int[] arr = {1,1,1,10,10,10};
 //        int x = 9;
 //        int k = 1;
-//        List<Integer> closestElements = app.findClosestElements(arr, x, k);
-//        System.out.println(closestElements);
+        List<Integer> closestElements = app.findClosestElements(arr, x, k);
+        System.out.println(closestElements);
 
 
     }

@@ -2,7 +2,7 @@ package com.stack;
 
 import java.util.Stack;
 
-public class App1_RemoveOutermostParentheses {
+public class App10_RemoveOutermostParentheses {
     public static void main(String[] args) {
         String s = "(()())(())";
         StringBuilder sb = new StringBuilder();

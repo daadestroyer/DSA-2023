@@ -2,7 +2,7 @@ package com.stack;
 
 import java.util.*;
 
-public class App4_SlidingWindowMaximum {
+public class App40_SlidingWindowMaximum {
     public static int[] bruteForce(int[] nums, int k) {
         int lo = 0;
         int hi = k-1;

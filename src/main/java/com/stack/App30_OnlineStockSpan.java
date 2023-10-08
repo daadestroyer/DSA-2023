@@ -3,7 +3,7 @@ package com.stack;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class App3_OnlineStockSpan {
+public class App30_OnlineStockSpan {
 
     int idx = 0;
 
@@ -19,7 +19,7 @@ public class App3_OnlineStockSpan {
 
     Stack<Pair> st;
 
-    public App3_OnlineStockSpan() {
+    public App30_OnlineStockSpan() {
         st = new Stack<>();
     }
 
@@ -45,7 +45,7 @@ public class App3_OnlineStockSpan {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        App3_OnlineStockSpan app = new App3_OnlineStockSpan();
+        App30_OnlineStockSpan app = new App30_OnlineStockSpan();
 
         while (n-- > 0) {
             int price = sc.nextInt();

@@ -36,7 +36,7 @@ class stack {
     }
 }
 
-public class App0_ImplementStackUsingArray {
+public class App110_ImplementStackUsingArray {
     public static void main(String[] args) {
         Stack st = new Stack();
 
