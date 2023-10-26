@@ -28,8 +28,8 @@ public class App02_NextGreaterElement_2 {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,3};
-//        System.out.println(Arrays.toString(monotonicstack(nums)));
-        System.out.println(1>1);
+        System.out.println(Arrays.toString(monotonicstack(nums)));
+
     }
 
 
