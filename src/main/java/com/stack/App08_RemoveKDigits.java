@@ -1,5 +1,6 @@
 package com.stack;
 
+import java.util.Comparator;
 import java.util.Stack;
 
 public class App08_RemoveKDigits {
@@ -28,7 +29,9 @@ public class App08_RemoveKDigits {
         while(sb.length() > 1 && sb.charAt(0) == '0'){
             sb.deleteCharAt(0);
         }
+
         return sb.toString();
+
     }
 
     public static void main(String[] args) {
