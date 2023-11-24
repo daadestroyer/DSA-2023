@@ -18,6 +18,8 @@ public class App04_CheckBinaryTreeIsBalance_BTOrNot {
         if(Math.abs(leftHeight - rightHeight) > 1){
             return -1;
         }
+        return Math.max(leftHeight, rightHeight) + 1;
+
     }
  */
     public static void main(String[] args) {
