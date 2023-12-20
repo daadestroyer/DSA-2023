@@ -34,10 +34,10 @@ public class App11_TopViewOfBT_BFS {
                     hm.put(verticalIndex,tempNode.data)
                 }
                 if(tempNode.left != null){
-                    q.add(new Pair(root,verticalIndex-1));
+                    q.add(new Pair(tempNode.left,verticalIndex-1));
                 }
                 if(tempNode.right != null){
-                    q.add(new Pair(root,verticalIndex+1));
+                    q.add(new Pair(tempNode.right,verticalIndex+1));
                 }
             }
             for(int i : hm.values()){
