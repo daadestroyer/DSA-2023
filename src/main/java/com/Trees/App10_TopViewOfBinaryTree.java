@@ -2,17 +2,16 @@ package com.Trees;
 
 import java.util.*;
 
-/*
-class Pair {
-    int data;
-    int level;
 
-    Pair(int data, int leve) {
-        this.data = data;
-        this.level = level;
-    }
-}
-*/
+//class Pair {
+//    int data;
+//    int level;
+//
+//    Pair(int data, int leve) {
+//        this.data = data;
+//        this.level = level;
+//    }
+//}
 
 public class App10_TopViewOfBinaryTree {
 
@@ -48,6 +47,7 @@ public class App10_TopViewOfBinaryTree {
             }
             return res;
         */
+
 
     }
 }

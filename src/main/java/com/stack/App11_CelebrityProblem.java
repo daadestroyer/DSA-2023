@@ -62,14 +62,12 @@ public class App11_CelebrityProblem {
     }
 
     public static void main(String[] args) {
-
         int[][] arr = {
                 {0, 1, 1, 0},
                 {1, 0, 1, 0},
                 {0, 0, 0, 0},
                 {1, 1, 1, 0}
         };
-
         System.out.println(findCelebrity1(arr));
 
     }

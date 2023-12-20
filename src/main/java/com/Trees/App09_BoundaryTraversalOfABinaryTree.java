@@ -59,9 +59,9 @@ public class App09_BoundaryTraversalOfABinaryTree {
             if(isLeafNode(root) == false){
                 res.add(root.data);
             }
-            addLeftBoundary(root.left,res);
+            addLeftBoundary(root,res);
             addLeaves(root,res);
-            addRightBoundary(root.right,res);
+            addRightBoundary(root,res);
             return res;
         }
     */
