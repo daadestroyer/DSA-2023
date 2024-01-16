@@ -1,6 +1,6 @@
 package com.Trees;
 
-public class App07_CheckIfTwoTreesAreIdenticalOrNot {
+public class App08_CheckIfTwoTreesAreIdenticalOrNot {
     /*
         public boolean isSameTree(TreeNode p , TreeNode q){
             if(p == null && q == null)

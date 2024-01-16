@@ -1,8 +1,6 @@
 package com.Trees;
 
-import java.util.List;
-
-public class App08_BinaryTreeZigZagTraversal {
+public class App09_BinaryTreeZigZagTraversal {
 
     /*
         public List<List<Integer>> zigzagLevelOrder(TreeNode root) {

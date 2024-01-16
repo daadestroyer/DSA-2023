@@ -1,6 +1,6 @@
 package com.Trees;
 
-public class App05_DiameterOF_BT {
+public class App06_DiameterOF_BT {
 /*
     int diameter = 0;
     public int maxDepth(TreeNode root){

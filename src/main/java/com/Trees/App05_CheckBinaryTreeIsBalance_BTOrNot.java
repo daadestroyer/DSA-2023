@@ -1,6 +1,6 @@
 package com.Trees;
 
-public class App04_CheckBinaryTreeIsBalance_BTOrNot {
+public class App05_CheckBinaryTreeIsBalance_BTOrNot {
 
 /*
     public int dfsHeight(TreeNode root){

@@ -1,6 +1,6 @@
 package com.Trees;
 
-public class App09_BoundaryTraversalOfABinaryTree {
+public class App010_BoundaryTraversalOfABinaryTree {
 
     /*
 

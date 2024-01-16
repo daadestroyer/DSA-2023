@@ -1,6 +1,6 @@
 package com.Trees;
 
-public class App06_MaximumPathSum {
+public class App07_MaximumPathSum {
 
     /*
         int res = Integer.MIN_VALUE;
