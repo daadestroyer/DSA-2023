@@ -1,4 +1,4 @@
-package com.Trees;
+package com.Trees.BinaryTree;
 
 import java.util.Map;
 import java.util.TreeMap;

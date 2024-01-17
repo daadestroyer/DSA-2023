@@ -1,4 +1,4 @@
-package com.Trees;
+package com.Trees.BinaryTree;
 
 public class App010_BoundaryTraversalOfABinaryTree {
 

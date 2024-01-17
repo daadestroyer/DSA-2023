@@ -1,9 +1,6 @@
-package com.Trees;
+package com.Trees.BinaryTree;
 
-import java.awt.image.AreaAveragingScaleFilter;
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
