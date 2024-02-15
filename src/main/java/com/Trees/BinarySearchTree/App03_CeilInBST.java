@@ -1,7 +1,17 @@
 package com.Trees.BinarySearchTree;
 
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
+
+interface inter{
+    void m1(int a);
+}
 public class App03_CeilInBST {
+
+
     public static void main(String[] args) {
+
         /*
             public int findCeilVal(Node node,int x,int ceilVal){
                 if(node == null){
@@ -21,5 +31,10 @@ public class App03_CeilInBST {
                 return findCeilVal(node,x,ceilVal);
             }
         */
+
+
+
+
+
     }
 }
